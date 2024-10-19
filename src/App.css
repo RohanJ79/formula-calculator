@@ -1,0 +1,183 @@
+/* src/App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Calculator Container */
+.calculator {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #007bff; /* Primary color for headings */
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.formula-input {
+  width: calc(100% - 20px);
+  padding: 12px; /* Increased padding for comfort */
+  font-size: 16px; /* Larger font for readability */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.formula-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+/* Container for variable inputs */
+.variable-input {
+  margin-top: 20px; /* Space above the variable input section */
+  padding: 15px; /* Padding inside the container */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Heading for variable inputs */
+.variable-input h3 {
+  margin-bottom: 15px; /* Space below heading */
+  color: #007bff; /* Primary color for headings */
+}
+
+/* Individual variable item styling */
+.variable-item {
+  display: flex; /* Flexbox layout for label and input */
+  align-items: center; /* Center align items vertically */
+  margin-bottom: 10px; /* Space between variable items */
+}
+
+/* Label styling */
+.variable-label {
+  flex: 1; /* Allow label to take available space */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Input field styling */
+.variable-input-field {
+  flex: 2; /* Allow input field to take more space */
+  padding: 10px; /* Padding inside the input field */
+  font-size: 16px; /* Font size for readability */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+/* Input field focus effect */
+.variable-input-field:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* LaTeX Display Styles */
+.latex-display {
+  margin-top: 20px;
+  padding: 15px; /* Padding around the display */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.latex-display h3 {
+  margin-bottom: 10px; /* Space below heading */
+  color: #007bff; /* Primary color for headings */
+  font-size: 20px; /* Slightly larger font for headings */
+}
+
+.katex {
+  font-size: 1.2em; /* Increase font size of the rendered LaTeX */
+}
+
+/* Button Styles */
+button {
+  display: block; /* Make button a block element for full width */
+  width: 100%; /* Full width button for better alignment */
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Space above the button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Result Display Styles */
+.result,
+.error {
+  margin-top: 20px;
+  font-size: 18px; /* Larger font size for results */
+}
+
+.error {
+  color: red;
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.result.success {
+  color: #28a745; /* Green color for successful results */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Saved Formulas Styles */
+/* Container for saved formulas */
+.saved-formulas {
+  margin-top: 20px; /* Space above the saved formulas section */
+  padding: 15px; /* Padding inside the container */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Heading for saved formulas */
+.saved-formulas h3 {
+  margin-bottom: 15px; /* Space below heading */
+  color: #007bff; /* Primary color for headings */
+}
+
+/* List styling */
+.saved-formulas ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual saved formula item styling */
+.saved-formula-item {
+  padding: 10px; /* Padding inside each item */
+  margin-bottom: 5px; /* Space between items */
+  background-color: #ffffff; /* White background for items */
+  border-radius: 4px; /* Rounded corners for items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for saved formula items */
+.saved-formula-item:hover {
+  background-color: #e0f7fa; /* Light blue background on hover */
+}
+
+/* No formulas message styling */
+.no-formulas {
+  color: #666; /* Gray color for no formulas message */
+}
