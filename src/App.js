@@ -151,6 +151,12 @@ const App = () => {
     calculateResult(loadedFormula);
   };
 
+  // Function to clear errors when clicking outside or losing focus
+  const handleBlur = () => {
+    validateInputsAndCalculate(); // Validate and calculate when focus is lost
+    setError(''); // Clear error message when focus is lost
+  };
+
   return (
     <div className="calculator">
       <h1>Formula Calculator</h1>
@@ -163,6 +169,7 @@ const App = () => {
         variables={variables}
         onVariableChange={handleVariableChange}
         disabled={!isFormulaSaved} // Disable if formula is not saved
+        onBlur={handleBlur} // Clear error on blur event
       />
 
       <ResultDisplay result={result} error={error} />

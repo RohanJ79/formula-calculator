@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### App description
+
+User is provided with input field to enter the formula
+Displayed the LaTeX version of the entered formula above the input box in real-time.
+While entering the formula user is shown with the input fields, for each unique input field (Text is shown along with input)
+User is allowed to adjust the values.
+Once the formula is entered user should press the save formula button.Untill then the Inputs are disabled.Once the formula is saved the inputs are enabled.We can always keep them enabled not a problem for safety purpose i have added this.
+Once values are entered for the variables, calculate the result of the formula in real-time and display the output below
+the inputs.
+Ensure the UI is responsive and user-friendly.
+Properly handle various screen sizes.
+Allow for error handling, such as invalid formulas or undefined variables.
